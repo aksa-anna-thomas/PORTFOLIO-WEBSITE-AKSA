@@ -1,0 +1,24 @@
+/* Home */
+#home{
+    height:820px;
+}
+
+.headings{
+    font-size: 1.7rem;
+}
+
+/*ABOUT  ME*/
+#pic img{
+    width: 125px;
+    height: 200px;
+}
+#intro h3{
+    font-size: 1.5rem;
+}
+/*ACHIEVEMENTS*/
+.gallery img{
+    width: 250px;
+    height: 150px;
+    margin: 10px;
+
+}

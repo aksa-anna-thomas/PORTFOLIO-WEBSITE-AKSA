@@ -1,0 +1,311 @@
+html{
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ 
+
+/*Navigationbar*/
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: none;
+    background-color:maroon;
+    position: sticky;
+    top: 0;
+
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: oldlace;
+    color: whitesmoke;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    background-color: cornsilk;
+    color: maroon;
+    box-shadow: 0 0 10px black;
+    border-radius: 15px;
+}
+
+/* HOME */
+
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color:black;
+
+
+}
+
+
+#home::before{
+    content:"";
+    background: url(../images/bgrock.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 900px;
+    width: 100%;
+
+
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /*border: 1px solid maroon;*/
+    align-items: center;
+    position: absolute;
+    top: 40%;
+    right: 30%;
+}
+
+
+.heading{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn{
+    padding: 10px 35px;
+    background-color: white;
+    border: 2px solid black;
+    color: white;
+    text-decoration-color: black;
+    text-decoration-line: none;
+    outline: none;
+    transition: .6s ease;
+    font-weight: bold;
+    cursor: default;
+
+}
+
+.btn:hover{
+    cursor: default;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black;
+    font-weight: bold
+}
+
+/* ABOUT ME */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 70px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    font-family: century;
+    color: maroon;
+    background-color: burlywood;
+    align-items: center;
+
+
+
+
+}
+
+#pic{
+    display:flex;
+}
+
+#pic img{
+    width: 300px;
+    height: 500px;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+    color: black;
+    text-decoration-line: none;
+    font-family: century;
+
+}
+
+#intro h3{
+    font-size: 1rem;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 30px;
+    color: black;
+    text-decoration-line: none;
+
+
+}
+
+/* ACHIEVEMENTS */
+#achievements{
+    display: flex;
+    flex-direction: column;
+    font-family: century;
+    color: maroon;
+    background-color: burlywood;
+    align-items: center;
+    padding: 70px;
+
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.gallery img{
+    width: 360px;
+    height: 200px;
+    margin: 10px;
+
+}
+
+
+
+/*CONTACT ME */
+#contact{
+    display: flex;
+    flex-direction: column;
+    padding: 70px;
+    align-items: center;
+    color:maroon;
+
+}
+
+.contactme{
+    display: flex;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    border: 5px solid maroon;
+    margin: 40px;
+    align-items: center;
+    text-align: justify;
+    padding-top: 90px;
+    background-color: burlywood;
+    color:black;
+    border-radius: 15px;
+}
+.container{
+    max-width: 1170px;
+    background-color:maroon;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+
+ul{
+    list-style: none;
+
+}
+.footer{
+    background-color: burlywood;
+    padding: 70px 0;
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    padding-bottom: 25px;
+}
+
+.footer-col h4{
+    font-family: "Orbitron",sans-serif;
+    font-size: 20px;
+    color:white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    position: relative;
+    align-items: center;
+}
+.footer-col ul li a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-weight:300;
+    display:block;
+    font-size: 16px;
+    text-transform: capitalize;
+
+}
+
+.footer-col li a:hover{
+    color:white;
+    padding-left: 8px;
+    
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background-color:burlywood;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50px;
+    color: maroon;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover{
+    color: maroon;
+    background-color: white;;
+
+
+}
+
+/*footer responsive */
+@media(max-width: 767px){
+    .footer-col{
+        width:50%;
+        margin-bottom:30px;
+    }
+}
+
+@media(max-width:574px){
+    .footer-col{
+        width:100%
+    }
+}
